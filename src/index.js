@@ -3,8 +3,7 @@ const template = require("babel-template");
 function shouldSplit(state) {
   return (
     state.opts.forceSplit ||
-    process.env.FORCE_SPLIT ||
-    process.env.NODE_ENV !== "development"
+    process.env.FORCE_SPLIT
   );
 }
 
