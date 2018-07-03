@@ -6,6 +6,25 @@ When adding code splitting to our app we ran into the problem where recompile ti
 
 
 ## Usage
+```bash
+yarn add babel-plugin-split-import --dev
+```
+Via `.babelrc` or babel-loader.
+
+```js
+{
+  "plugins": [["split-import", options]]
+}
+```
+### options
+
+`options` can be object.
+
+```javascript
+{
+  "forcesplit": true // default false
+}
+```
 
 ### Configuration
 By default, `babel-plugin-split-import` won't use code-splitting. Code splitting can be enabled through the `FORCE_SPLIT` command line variable or the `forceSplit` babel plugin option.
