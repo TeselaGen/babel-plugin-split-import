@@ -1,0 +1,12 @@
+{
+  "name": "babel-plugin-split-import",
+  "version": "1.0.0",
+  "description": "Babel plugin to transform imports to be normal in development and code split in production",
+  "main": "src/index.js",
+  "repository": "https://github.com/TeselaGen/babel-plugin-split-import.git",
+  "author": "Michael Matena <michael.matena@teselagen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-template": "^6.26.0"
+  }
+}
