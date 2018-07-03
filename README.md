@@ -32,9 +32,9 @@ const MyComponent = simport("./path/to/MyComponent");
 
 If the plugin is configured to use code splitting, then the code will compile to:
 ```js
-import MyComponent from "./path/to/MyComponent"
+const MyComponent = makeLoadableComponent(() => import("./path/to/MyComponent"));
 ```
 Otherwise, the code will compile to:
 ```js
-const MyComponent = makeLoadableComponent(() => import("./path/to/MyComponent"));
+import MyComponent from "./path/to/MyComponent"
 ```
